@@ -1,0 +1,31 @@
+.overview-text-content{
+  font-size: 14px;
+  text-align: justify;
+  color: #000;
+  /* background-color: red; */
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.overview-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 50px;
+}
+
+.overview-div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto; /* Allows horizontal scroll when necessary */
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1025px) {
+  .overview-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

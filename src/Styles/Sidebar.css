@@ -1,0 +1,78 @@
+.sidebar {
+  /* display: none; */
+  width: 250px;
+  position: fixed;
+  /* z-index: 1; */
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  background-color: #05055d;
+  color: #f1f1f1;
+  transition: all 0.5s ease;
+  height: 100%; /* Make the sidebar full height */ 
+  overflow: hidden; 
+}  
+
+
+.sidebar.closed {
+  width: 60px;
+  padding-left: 5px;
+  padding-right: 5px;  
+  transition: all 0.3s ease;
+
+}
+
+.sidebar-header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+.sidebar-nav {
+  padding: 0;
+  list-style: none;
+  
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* background-color: #fff; */
+  justify-content: space-between;
+}
+
+.sidebar-nav .nav-item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+    /* background-color: red; */
+
+}
+
+.sidebar-nav .nav-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  /* transition:  0.1s ease-in-out; */
+  /* background-color: red; */
+  width: 100%;
+}
+
+.sidebar-nav .nav-item:hover{
+  background-color: #0f0f8e;
+  transition: all 0.2s;
+}
+
+.sidebar-nav .nav-item.active{
+  color: yellow;
+}
+

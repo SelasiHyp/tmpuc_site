@@ -1,0 +1,17 @@
+.checkbox-container{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  max-width: max-content;
+    /* background-color: blue; */
+}
+
+.checkbox-label{
+  max-width: 650px;
+  /* background-color: blue; */
+}
+
+.checkbox{
+  width: 16px;
+ 
+}

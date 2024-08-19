@@ -1,0 +1,57 @@
+/* src/Components/Testimonials/Testimonials.css */
+
+.testimonials-container {
+  padding: 40px;
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2); /* Gradient background */
+  margin: 50px auto;
+  max-width: 1200px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.testimonials-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase; /* Make the title uppercase */
+  letter-spacing: 2px; /* Add letter spacing */
+  background: -webkit-linear-gradient(#5f72be, #9b23ea); /* Gradient text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.testimonial {
+  background: linear-gradient(to bottom, #ffffff, #f1f1f1); /* Soft gradient background */
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Smooth transition for background */
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to bottom, #f9f9f9, #e6e6e6); /* Change gradient on hover */
+}
+
+.testimonial-feedback {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.testimonial-author {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 15px;
+  font-style: italic;
+  transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.testimonial:hover .testimonial-author {
+  color: #555; /* Darker color on hover */
+}

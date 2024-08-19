@@ -1,0 +1,102 @@
+/* ItemTable.css */
+.table-container {
+  padding: 20px;
+  width: 100%;
+  
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Allows horizontal scroll when necessary */
+}
+
+.item-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.item-table th, .item-table td {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  word-wrap: break-word; /* Ensures content wraps within cells */
+}
+
+.item-table th {
+  background-color: #f2f2f2;
+}
+
+.item-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.clickable-row {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.clickable-row:hover {
+  background-color: #f0f0f0;
+}
+
+.column-toggle-container {
+  margin-bottom: 10px;
+}
+
+.column-toggle-container label {
+  margin-right: 15px;
+}
+
+.column-toggle-btn {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.column-toggle-btn:hover {
+  background-color: #0056b3;
+}
+
+.column-menu {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.column-menu label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.column-menu input {
+  margin-right: 5px;
+}
+
+/* Ensure that the table is responsive */
+.item-table th, .item-table td {
+  text-align: left;
+  padding: 10px;
+  /* white-space: nowrap; Prevents text from breaking into multiple lines */
+}
+
+@media screen and (max-width: 768px) {
+  .item-table th, .item-table td {
+    /* font-size: 14px; */
+    /* padding: 8px; */
+  }
+
+  .item-table {
+    
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .item-table th, .item-table td {
+    white-space: normal; /* Reverts to default on smaller screens */
+  }
+}

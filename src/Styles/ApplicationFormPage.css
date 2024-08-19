@@ -1,0 +1,191 @@
+.bgc {
+  display: flex;
+  flex-direction: column;
+  background-color: #34495e; /* Darker Midnight Blue */
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #ffffff;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image {
+  width: 100vw;
+  height: 60vh; /* Increased height for more impact */
+  filter: blur(2px);
+  position: relative;
+  object-fit: cover;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Darker overlay for better text visibility */
+}
+
+.page-title {
+  font-size: 72px; /* Further increased font size */
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  z-index: 2; /* Ensure it's above the overlay */
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  color: #ffffff;
+  padding: 20px;
+  z-index: 2; /* Ensure it's above the overlay */
+}
+
+.welcome-message {
+  font-size: 36px; /* Increased font size */
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.instructions-div {
+  max-width: 1000px;
+  text-align: left; /* Align text to the left for better readability */
+  padding: 40px; /* Increased padding for better spacing */
+  margin: 40px auto; /* Centered with automatic margins */
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+  background-color: #ffffffd1;
+  border-radius: 12px;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Added gap between elements */
+}
+
+.form-section-title {
+  font-size: 26px; /* Slightly increased font size */
+  font-weight: 600;
+  margin-bottom: 20px; /* Added margin for spacing */
+  color: #2c3e50;
+}
+
+.gender-selection label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 8px; /* Adjusted margin for spacing */
+}
+
+.dob-gender-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px; /* Increased gap for better spacing */
+  align-items: center; /* Centered items for alignment */
+  justify-content: space-between;
+  margin-bottom: 30px; /* Added margin for spacing */
+}
+
+.gender-selection-container {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 48%; /* Adjusted width for better fit */
+  font-size: 16px;
+}
+
+.gender-selection {
+  display: flex;
+  gap: 20px; /* Increased gap for better spacing */
+}
+
+.disability-description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.option-label {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  color: #333333;
+}
+
+select {
+  border: 1px solid #CCCCCC;
+  padding: 0.5em;
+  font-size: 16px;
+  width: 100%;
+  max-width: 100%; /* Adjusted for responsive design */
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  border-radius: 4px; /* Added border radius for a softer look */
+}
+
+.submit-button-div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end; /* Align button to the end */
+}
+
+.submit-button {
+  font-family: 'Poppins';
+  margin-top: 20px;
+  padding: 14px 24px; /* Increased padding for better touch targets */
+  cursor: pointer;
+  width: 100%; /* Full width for responsiveness */
+  max-width: 400px; /* Adjusted width for better fit */
+  border: none;
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  transition: all 0.3s ease-in-out;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center; /* Centered text within the button */
+}
+
+.submit-button:hover {
+  background: linear-gradient(135deg, #e67e22, #f39c12);
+  transform: translateY(-3px);
+}
+
+
+@media screen and (max-width: 780px) {
+  .page-title {
+    font-size: 52px; /* Adjusted for smaller screens */
+  }
+
+  .welcome-message {
+    font-size: 28px; /* Adjusted for smaller screens */
+  }
+
+  .banner-image {
+    height: 50vh; /* Adjusted height for smaller screens */
+  }
+
+  .instructions-div {
+    margin: 20px 30px;
+  }
+}

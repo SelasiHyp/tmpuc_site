@@ -1,0 +1,84 @@
+nav {
+  width: 100%;
+  background: #f0f4f8; /* Light grayish-blue for a clean, contrasting background */
+  color: #333333; /* Darker text color for readability */
+  padding: 20px 40px; /* Increased padding for a spacious layout */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a refined look */
+  z-index: 10;
+  transition: background 0.5s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.logo {
+  width: 250px; /* Adjusted logo size for balance */
+  height: auto;
+  filter: brightness(1.2); /* Ensure the logo stands out */
+  transition: filter 0.3s ease, transform 0.3s ease; /* Smooth transition for logo effects */
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Align items vertically */
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 20px; /* Spacing between menu items */
+}
+
+nav a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333333; /* Dark color for text */
+  font-size: 18px; /* Slightly larger font size for readability */
+  font-weight: 500; /* Medium font weight for a sleek appearance */
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and hover effects */
+  padding: 12px 18px; /* Vertical and horizontal padding for better click area */
+  border-radius: 6px; /* Slightly more rounded corners for a modern look */
+}
+
+nav a:hover {
+  color: #007bff; /* Highlight color on hover */
+  background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+  transform: translateY(-3px) scale(1.05); /* Slight lift and zoom effect on hover */
+}
+
+nav .apply-now {
+  font-size: 18px; /* Larger font size for emphasis */
+  font-weight: 600; /* Bold weight for emphasis */
+  color: #007bff; /* Highlight color */
+  border: 2px solid #007bff; /* Border matching the highlight color */
+  border-radius: 6px; /* Slightly more rounded corners */
+  padding: 12px 24px; /* Adequate padding for button appearance */
+  text-transform: uppercase; /* Uppercase text for a button-like appearance */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+nav .apply-now:hover {
+  background-color: #007bff; /* Blue background on hover */
+  color: #ffffff; /* White text on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Dark mode styling */
+.dark-nav {
+  background: #e1e6f0; /* Light blue for dark mode */
+}
+
+.dark-nav .logo {
+  filter: brightness(1.2); /* Ensure the logo stands out in dark mode */
+}
+
+.dark-nav a {
+  color: #333333; /* Consistent color for links in dark mode */
+}
+
+.dark-nav a:hover {
+  color: #007bff; /* Consistent highlight color on hover for dark mode */
+}

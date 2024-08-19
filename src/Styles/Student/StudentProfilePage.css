@@ -1,0 +1,72 @@
+.profile-picture{
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  /* background-color: #e5e5e5; */
+}
+
+.profile-picture-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.upload-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+}
+
+.editable-input {
+  padding: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.editable-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.edit-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.profile-details {
+  text-align: left;
+}
+
+.profile-details p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #555;
+}
+
+.profile-details strong {
+  color: #333;
+}

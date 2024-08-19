@@ -1,0 +1,75 @@
+.programs {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap; /* Allows for responsive design */
+    gap: 20px; /* Adds spacing between items */
+    justify-content: center; /* Center align items */
+}
+
+.program {
+    flex: 1 1 30%; /* Flex basis with responsive behavior */
+    position: relative;
+    border-radius: 15px; /* More rounded corners for elegance */
+    overflow: hidden; /* Ensures content doesn't overflow the border-radius */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for a lifted effect */
+}
+
+.program img {
+    width: 100%;
+    height: 100%; /* Ensures the image covers the entire container */
+    object-fit: cover; /* Maintains aspect ratio while covering the container */
+    transition: transform 0.4s ease, filter 0.4s ease; /* Smooth transition for zoom effect and brightness */
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 15, 152, 0.5); /* Slightly darker overlay for better contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth transition for opacity and transform */
+    padding: 20px;
+    text-align: center; /* Center align text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for a lifted effect */
+    border-radius: 15px; /* Matches the border-radius of the container */
+}
+
+.caption img {
+    width: 80px; /* Icon size */
+    height: 80px; /* Ensure icons are square */
+    margin-bottom: 15px; /* Spacing below the icon */
+}
+
+.caption h3 {
+    font-size: 24px; /* Larger font size for title */
+    font-weight: 700; /* Bold font weight for emphasis */
+    margin-bottom: 10px; /* Spacing below the title */
+}
+
+.caption p {
+    font-size: 16px; /* Elegant font size for description */
+    font-weight: 400; /* Normal font weight */
+    line-height: 1.6; /* Improved readability */
+    margin: 0; /* Remove margin for better alignment */
+    color: #ffffff;
+    padding: 0 10px; /* Padding for better text fitting */
+}
+
+.program:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect on hover */
+}
+
+.program:hover .caption {
+    opacity: 1; /* Show caption on hover */
+    transform: translateY(0); /* Ensure caption is properly positioned */
+}

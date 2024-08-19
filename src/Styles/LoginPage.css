@@ -1,0 +1,160 @@
+.page-background {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+}
+
+.image-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 60%;
+  overflow: hidden;
+}
+
+.graduation-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.image-text-overlay {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fafafa;
+  background: rgba(44, 62, 80, 0.7); /* Semi-transparent overlay */
+  padding: 15px;
+}
+.welcome-message{
+  color: #fafafa;
+  font-weight: 500;
+}
+
+.welcome-text {
+  font-size: 54px;
+  font-weight:800;
+  color: #ffffff;
+}
+
+.login-section {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #2c3e50 0%, #bdc3c7 100%);
+  padding: 50px;
+  width: 40%;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  max-width: 500px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.login-title {
+  margin-bottom: 25px;
+  font-size: 36px;
+  font-weight: 800;
+  color: #333333;
+}
+
+.login-instruction {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.login-field {
+  font-family: 'Poppins';
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #efefef;
+  border: none;
+  border-radius: 5px;
+}
+
+.signIn-button {
+  font-family: 'Poppins';
+  margin-top: 20px;
+  padding: 15px;
+  cursor: pointer;
+  max-width: 100%;
+  border: none;
+  font-weight: 400;
+  background-color: #e5b300;
+  transition: background-color 0.3s;
+  color: #fafafa;
+  border-radius: 5px;
+}
+
+.signIn-button:hover {
+  background-color: #f4cd42;
+}
+
+@media screen and (max-width: 780px) {
+  .page-background {
+    flex-direction: column;
+  }
+
+  .image-section {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .graduation-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .welcome-text {
+    font-size: 34px;
+  }
+
+  .login-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .login-container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  .login-title {
+    font-size: 28px;
+  }
+
+  .login-field {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .signIn-button {
+    padding: 12px;
+  }
+}
